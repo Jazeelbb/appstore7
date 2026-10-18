@@ -7,7 +7,7 @@ import json, pathlib, re, datetime
 RAIZ = pathlib.Path(__file__).parent
 SITE = "https://appstore7.com.br"
 PUB = "ca-pub-2393598762421817"
-VERSAO = "4"  # sobe a cada publicação (cache do css/js)
+VERSAO = "6"  # sobe a cada publicação (cache do css/js)
 
 MENU = [
     ("index.html", "Início", "inicio"),
@@ -32,11 +32,11 @@ def cabeca(m, arquivo):
   <meta property="og:description" content="{m['descricao']}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{url}" />
-  <meta name="theme-color" content="#1d1052" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23673de6'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3E7%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#111111" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23111111'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3E7%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,800..900&family=Inter:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="assets/site.css?v={VERSAO}" />
 </head>
 <body>

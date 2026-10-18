@@ -16,39 +16,11 @@
             <a class="botao botao-vidro" href="#como-funciona">Ver como funciona</a>
           </div>
         </div>
-        <div class="demo-centro revelar" data-demo-celular>
+        <div class="demo-centro revelar">
           <div class="celular">
-            <div class="celular-tela">
-              <div class="tela" data-legenda="1. O cliente abre a página do evento e escolhe o pedido">
-                <div class="tela-banner">Almoço Beneficente · Sáb 12h</div>
-                <div class="item-cardapio"><div><b>Feijoada completa</b><br><span>R$ 25,00</span></div><span class="qtd">2</span></div>
-                <div class="item-cardapio"><div><b>Marmita de frango</b><br><span>R$ 20,00</span></div><span class="qtd">1</span></div>
-                <div class="item-cardapio"><div><b>Refrigerante lata</b><br><span>R$ 5,00</span></div><span class="qtd">3</span></div>
-                <div class="botao-tela laranja">Continuar · R$ 85,00</div>
-              </div>
-              <div class="tela" data-legenda="2. Escolhe como pagar: Mercado Pago, PIX ou na retirada">
-                <b style="font-size:15px">Forma de pagamento</b>
-                <div class="pag-opcao marcada"><span class="radio"></span><div><b>PIX</b><br><span style="color:var(--suave)">QR com o valor exato</span></div></div>
-                <div class="pag-opcao"><span class="radio"></span><div><b>Mercado Pago</b><br><span style="color:var(--suave)">PIX, cartão ou boleto</span></div></div>
-                <div class="pag-opcao"><span class="radio"></span><div><b>Pagar na retirada</b><br><span style="color:var(--suave)">Dinheiro ou maquininha</span></div></div>
-                <div class="botao-tela">Confirmar pedido</div>
-              </div>
-              <div class="tela" data-legenda="3. Recebe o código e o QR Code de retirada por e-mail">
-                <b style="font-size:15px;text-align:center">Pedido confirmado!</b>
-                <svg class="qr" aria-hidden="true"></svg>
-                <div class="codigo-retirada">K7Q-2F</div>
-                <span style="text-align:center;color:var(--suave)">Mostre este código na retirada</span>
-              </div>
-              <div class="tela" data-legenda="4. No dia, a equipe escaneia o QR e dá baixa na entrega">
-                <b style="font-size:15px">Retirada · leitura do QR</b>
-                <div style="border:3px dashed var(--laranja);border-radius:14px;height:150px;display:grid;place-items:center;font-size:34px">📷</div>
-                <span class="selo-pago">✓ PAGO · entregar 2 feijoadas, 1 marmita</span>
-                <div class="botao-tela" style="background:var(--verde)">Marcar como entregue</div>
-              </div>
-            </div>
+            <video data-video-narrado src="assets/video/storebt-demo.mp4" poster="assets/video/storebt-demo.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Vídeo de apresentação do StoreBT: do pedido do comprador à entrega com QR Code"></video>
           </div>
-          <div class="pontos-tela" aria-label="Telas da demonstração"></div>
-          <p class="demo-legenda"></p>
+          <button type="button" class="botao botao-claro ouvir" data-ouvir>Ouvir com narração</button>
         </div>
       </div>
     </section>
@@ -71,7 +43,7 @@
               <li>Prestação de contas montada à mão no fim</li>
             </ul>
           </div>
-          <div class="cartao depois revelar" style="border-color:#ffd2b0;box-shadow:0 14px 40px rgba(242,113,28,.15)">
+          <div class="cartao depois revelar" >
             <h3>Com o StoreBT</h3>
             <ul>
               <li>Página do evento com cardápio, retirada e a causa</li>
@@ -101,12 +73,12 @@
       <div class="envoltorio">
         <div class="secao-topo revelar"><span class="selo laranja">Recursos</span><h2>Tudo o que o evento precisa</h2></div>
         <div class="grade-3">
-          <div class="cartao revelar"><div class="icone laranja">🎨</div><h3>Página do evento</h3><p>Banner, cores e logo da sua organização, com cardápio, informações de retirada e a causa do evento.</p></div>
-          <div class="cartao revelar"><div class="icone laranja">📝</div><h3>Formulário personalizado</h3><p>Perguntas extras no pedido: texto, número, data, lista ou múltipla escolha, obrigatórias ou não.</p></div>
-          <div class="cartao revelar"><div class="icone laranja">📧</div><h3>Código e QR por e-mail</h3><p>Cada pedido recebe um código e um QR Code de retirada, num e-mail com o nome e o logo da organização.</p></div>
-          <div class="cartao revelar"><div class="icone laranja">📷</div><h3>Baixa no dia</h3><p>Leitura do QR pela câmera do celular, com aviso colorido de pago, pendente ou já entregue.</p></div>
-          <div class="cartao revelar"><div class="icone laranja">📊</div><h3>Painel e relatórios</h3><p>Totais do evento, busca e filtros, conferência de comprovantes e exportação em Excel ou CSV.</p></div>
-          <div class="cartao revelar"><div class="icone laranja">👥</div><h3>Equipe com papéis</h3><p>Dono, administradores e equipe de entrega, cada um com seu acesso, por convite. Notificações de novos pedidos e pagamentos.</p></div>
+          <div class="cartao revelar"><span class="num">01</span><h3>Página do evento</h3><p>Banner, cores e logo da sua organização, com cardápio, informações de retirada e a causa do evento.</p></div>
+          <div class="cartao revelar"><span class="num">02</span><h3>Formulário personalizado</h3><p>Perguntas extras no pedido: texto, número, data, lista ou múltipla escolha, obrigatórias ou não.</p></div>
+          <div class="cartao revelar"><span class="num">03</span><h3>Código e QR por e-mail</h3><p>Cada pedido recebe um código e um QR Code de retirada, num e-mail com o nome e o logo da organização.</p></div>
+          <div class="cartao revelar"><span class="num">04</span><h3>Baixa no dia</h3><p>Leitura do QR pela câmera do celular, com aviso colorido de pago, pendente ou já entregue.</p></div>
+          <div class="cartao revelar"><span class="num">05</span><h3>Painel e relatórios</h3><p>Totais do evento, busca e filtros, conferência de comprovantes e exportação em Excel ou CSV.</p></div>
+          <div class="cartao revelar"><span class="num">06</span><h3>Equipe com papéis</h3><p>Dono, administradores e equipe de entrega, cada um com seu acesso, por convite. Notificações de novos pedidos e pagamentos.</p></div>
         </div>
       </div>
     </section>
