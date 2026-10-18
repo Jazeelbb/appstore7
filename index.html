@@ -5,50 +5,238 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google-adsense-account" content="ca-pub-2393598762421817" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2393598762421817" crossorigin="anonymous"></script>
-  <title>AppStore7 — ferramentas para quem vende online</title>
+  <title>AppStore7 — ferramentas web para vender, organizar e crescer</title>
   <link rel="canonical" href="https://appstore7.com.br/" />
-  <meta name="description" content="AppStore7: ferramentas gratuitas no navegador para quem vende no Mercado Livre, Shopee e outros marketplaces." />
+  <meta name="description" content="AppStore7 reúne ferramentas web brasileiras: PLPDANFE7 (etiqueta + DANFE numa etiqueta só), StoreBT (vendas e retirada de pedidos em eventos) e DropStore7 (dropshipping no Mercado Livre)." />
+  <meta property="og:title" content="AppStore7 — ferramentas web para vender, organizar e crescer" />
+  <meta property="og:description" content="AppStore7 reúne ferramentas web brasileiras: PLPDANFE7 (etiqueta + DANFE numa etiqueta só), StoreBT (vendas e retirada de pedidos em eventos) e DropStore7 (dropshipping no Mercado Livre)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://appstore7.com.br/" />
+  <meta name="theme-color" content="#1d1052" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23673de6'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3E7%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: "DM Sans", sans-serif; background: #f4f0ff; color: #1d1e20; line-height: 1.55; min-height: 100vh; display: flex; flex-direction: column; }
-    header { background: #fff; border-bottom: 1px solid #e6e0fa; padding: 18px 16px; }
-    header .marca { max-width: 960px; margin: 0 auto; font-weight: 800; font-size: 22px; color: #673de6; }
-    main { flex: 1; max-width: 960px; width: 100%; margin: 0 auto; padding: 48px 16px; }
-    h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; margin-bottom: 12px; }
-    .intro { font-size: 18px; color: #4a4b57; max-width: 640px; margin-bottom: 36px; }
-    .apps { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
-    .app { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 18px rgba(103, 61, 230, .08); display: flex; flex-direction: column; gap: 10px; }
-    .app h2 { font-size: 20px; }
-    .app p { color: #4a4b57; flex: 1; }
-    .app a { align-self: flex-start; background: #673de6; color: #fff; text-decoration: none; font-weight: 700; padding: 10px 18px; border-radius: 8px; }
-    .app a:hover { opacity: .9; }
-    .app.breve { border: 2px dashed #d5cbf7; box-shadow: none; background: transparent; }
-    footer { text-align: center; padding: 24px 16px; color: #6d6e78; font-size: 14px; }
-    footer a { color: #673de6; }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" />
+  <link rel="stylesheet" href="assets/site.css?v=4" />
 </head>
 <body>
-  <header><div class="marca">AppStore7</div></header>
-  <main>
-    <h1>Ferramentas para quem vende online</h1>
-    <p class="intro">Aplicativos gratuitos que rodam no navegador e economizam tempo no dia a dia de quem vende no Mercado Livre, Shopee e outros marketplaces.</p>
-    <div class="apps">
-      <div class="app">
-        <h2>PLPDANFE7</h2>
-        <p>Junte a etiqueta de envio (PLP) e o DANFE numa etiqueta só, coloque o SKU na etiqueta e imprima direto na Zebra.</p>
-        <a href="https://plpdanfe7.appstore7.com.br/conversor.html">Abrir o PLPDANFE7</a>
+  <header class="topo">
+    <div class="envoltorio">
+      <a class="marca" href="index.html"><span class="marca-icone">7</span>AppStore7</a>
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="index.html#apps">Apps</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+<main>
+    <section class="heroi">
+      <div class="envoltorio">
+        <div>
+          <span class="selo claro">Ferramentas web · feitas no Brasil</span>
+          <h1>Apps que fazem o <em>trabalho repetitivo</em> por você</h1>
+          <p class="lead">A AppStore7 cria ferramentas simples, rápidas e diretas ao ponto para quem vende em marketplaces e para quem organiza eventos. Você abre no navegador e resolve: sem instalação complicada e sem curso.</p>
+          <ul class="heroi-pontos">
+            <li>Funciona no navegador</li>
+            <li>Pensado para o vendedor brasileiro</li>
+            <li>Suporte em português</li>
+          </ul>
+          <div class="acoes">
+            <a class="botao botao-primario" href="#apps">Conhecer os apps</a>
+            <a class="botao botao-vidro" href="sobre.html">Quem somos</a>
+          </div>
+        </div>
+        <div class="demo-centro revelar">
+          <div class="janela">
+            <div class="janela-barra"><i></i><i></i><i></i><span>plpdanfe7.appstore7.com.br/conversor.html</span></div>
+            <div class="janela-corpo">
+              <div class="demo-plp">
+                <div class="entrada">
+                  <div class="mini-folha"><b>Etiqueta de envio</b><div class="barras"></div><div class="linha-cinza"></div><div class="linha-cinza curta"></div></div>
+                  <div class="mini-folha"><b>DANFE (nota fiscal)</b><div class="linha-cinza"></div><div class="linha-cinza"></div><div class="barras"></div></div>
+                </div>
+                <div class="seta-demo" aria-hidden="true">➜</div>
+                <div class="etiqueta-10x15">
+                  <span class="tamanho">10 × 15</span>
+                  <span class="sku">SKU CAM-AZ-M</span>
+                  <div class="parte"><b>Envio</b><div class="barras"></div><div class="linha-cinza"></div></div>
+                  <div class="parte"><b>NF-e 001.234</b><div class="barras"></div><div class="linha-cinza curta"></div></div>
+                </div>
+              </div>
+              <div class="status-impressao"><span class="ponto"></span> Pronto para imprimir na Zebra</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="app breve">
-        <h2>Em breve</h2>
-        <p>Novas ferramentas estão a caminho.</p>
+    </section>
+
+    <section class="secao" id="apps">
+      <div class="envoltorio">
+        <div class="secao-topo revelar">
+          <span class="selo">Nossos apps</span>
+          <h2>Uma ferramenta para cada dor do dia a dia</h2>
+          <p>Cada app nasceu de um problema real: imprimir etiqueta e nota em papéis separados, controlar pedidos de evento em planilha, montar uma operação de dropshipping do zero. Veja o que cada um faz e abra a demonstração.</p>
+        </div>
+        <div class="apps-grade">
+          <article class="app-cartao plp revelar">
+            <div class="app-vitrine">
+              <div class="etiqueta-10x15" style="width:150px">
+                <span class="tamanho">10 × 15</span>
+                <span class="sku">SKU KIT-02</span>
+                <div class="parte"><b>Envio</b><div class="barras"></div></div>
+                <div class="parte"><b>DANFE</b><div class="barras"></div></div>
+              </div>
+            </div>
+            <div class="app-corpo">
+              <span class="selo">Para vendedores de marketplace</span>
+              <h3>PLPDANFE7</h3>
+              <p>Junta a etiqueta de envio e a nota fiscal (DANFE ou DACE) numa etiqueta térmica só, coloca o SKU na etiqueta do Mercado Livre e da Shopee e imprime direto na Zebra. Grátis, sem cadastro e sem enviar o arquivo para servidor.</p>
+              <ul class="app-tags"><li>Mercado Livre</li><li>Shopee</li><li>Shein</li><li>Amazon</li><li>Zebra / ZPL</li></ul>
+              <div class="app-links">
+                <a class="botao botao-primario" href="plpdanfe7.html">Ver demonstração</a>
+                <a class="botao botao-claro" href="https://plpdanfe7.appstore7.com.br/conversor.html">Abrir o app</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app-cartao sbt revelar">
+            <div class="app-vitrine">
+              <div class="celular" style="width:170px">
+                <div class="celular-tela">
+                  <div class="tela ativa" style="padding-top:36px">
+                    <div class="tela-banner" style="height:50px;font-size:11px">Almoço beneficente</div>
+                    <svg class="qr" style="width:96px;height:96px" aria-hidden="true"></svg>
+                    <div class="codigo-retirada" style="font-size:14px">K7Q-2F</div>
+                    <span class="selo-pago" style="font-size:10px">PAGO · pronto p/ retirar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="app-corpo">
+              <span class="selo laranja">Para eventos e vendas solidárias</span>
+              <h3>StoreBT</h3>
+              <p>Página de vendas do evento, pagamento por Mercado Pago ou PIX, código e QR Code de retirada por e-mail e baixa no dia escaneando pela câmera. Fim das planilhas e das listas de papel na hora da entrega.</p>
+              <ul class="app-tags"><li>Marmitas</li><li>Almoços beneficentes</li><li>PIX</li><li>QR Code</li><li>Excel</li></ul>
+              <div class="app-links">
+                <a class="botao botao-laranja" href="storebt.html">Ver demonstração</a>
+                <a class="botao botao-claro" href="https://storebt.appstore7.com.br/">Abrir o app</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app-cartao revelar" style="grid-column: 1 / -1">
+            <div class="app-corpo" style="flex-direction:row;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+              <div style="flex:1 1 280px">
+                <span class="selo">Em desenvolvimento</span>
+                <h3>DropStore7 — dropshipping no Mercado Livre</h3>
+                <p style="margin-top:8px">Catálogo de anúncios prontos para replicar na sua conta do Mercado Livre, saldo pré-pago em carteira e acompanhamento de cada pedido, da etiqueta à postagem, sem estoque próprio.</p>
+              </div>
+              <a class="botao botao-marinho" href="dropstore7.html">Conhecer o DropStore7</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao clara">
+      <div class="envoltorio">
+        <div class="secao-topo revelar">
+          <span class="selo">Como pensamos</span>
+          <h2>Ferramentas pequenas, problemas grandes resolvidos</h2>
+          <p>Em vez de um sistema gigante que faz tudo pela metade, cada app da AppStore7 faz uma coisa muito bem feita.</p>
+        </div>
+        <div class="grade-3">
+          <div class="cartao revelar"><div class="icone">⚡</div><h3>Rápido de verdade</h3><p>Nada de configurar dez telas antes de começar. Você abre, usa e volta para o que importa: vender, separar e entregar.</p></div>
+          <div class="cartao revelar"><div class="icone verde">🔒</div><h3>Seus dados com você</h3><p>Sempre que possível, o processamento acontece no seu próprio navegador. No PLPDANFE7, por exemplo, o arquivo da etiqueta nem sai do seu computador.</p></div>
+          <div class="cartao revelar"><div class="icone laranja">🇧🇷</div><h3>Feito para o Brasil</h3><p>DANFE, DACE, PIX, Mercado Livre, Shopee, impressoras térmicas nacionais: as ferramentas falam a língua de quem vende e organiza aqui.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="envoltorio">
+        <div class="secao-topo revelar">
+          <span class="selo">Para quem é</span>
+          <h2>Quem usa os apps da AppStore7</h2>
+        </div>
+        <div class="grade-2">
+          <div class="cartao revelar">
+            <h3>Vendedores de marketplace</h3>
+            <p>Lojas que despacham dezenas ou centenas de pacotes por dia no Mercado Livre, Shopee, Shein, Amazon, Magalu e TikTok Shop. Para elas, cada segundo por pacote vira horas no fim do mês. O PLPDANFE7 corta uma impressão inteira por pedido e evita a troca de nota fiscal entre pacotes. O DropStore7 abre a porta para vender sem estoque próprio.</p>
+          </div>
+          <div class="cartao revelar">
+            <h3>Organizadores de eventos</h3>
+            <p>Igrejas, escolas, associações, grupos de jovens e empreendedores que vendem marmitas, almoços beneficentes, rifas de alimentos e kits. O StoreBT substitui a planilha e o caderno: cada pedido tem pagamento registrado, código de retirada e baixa na hora da entrega, com relatório no final.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao clara">
+      <div class="envoltorio">
+        <div class="secao-topo revelar"><span class="selo">Dúvidas</span><h2>Perguntas frequentes</h2></div>
+        <div class="faq">
+          <details class="revelar"><summary>Os apps são pagos?</summary><p>O PLPDANFE7 é gratuito e pode ser usado sem cadastro; quem quiser usar sem anúncios pode assinar um plano mensal opcional. O StoreBT e o DropStore7 têm condições próprias, descritas na página de cada um.</p></details>
+          <details class="revelar"><summary>Preciso instalar alguma coisa?</summary><p>Não para começar: todos funcionam no navegador. O PLPDANFE7 tem uma extensão opcional para o Chrome que abre as etiquetas sozinha, e, para imprimir direto na Zebra, usa o programa gratuito Zebra Browser Print.</p></details>
+          <details class="revelar"><summary>Os apps funcionam no celular?</summary><p>O StoreBT foi pensado primeiro para o celular, inclusive a leitura do QR Code pela câmera. O PLPDANFE7 é usado principalmente no computador, onde fica a impressora térmica.</p></details>
+          <details class="revelar"><summary>Como falo com a AppStore7?</summary><p>Pela página de <a href="contato.html">contato</a>. Respondemos dúvidas, sugestões de melhoria e pedidos de novas funções.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="envoltorio">
+        <div class="chamada revelar">
+          <h2>Comece pelo app que resolve a sua dor de hoje</h2>
+          <p>Escolha um app, veja a demonstração e experimente. Se faltar alguma coisa, fale com a gente: muitas funções nasceram de pedidos de usuários.</p>
+          <div class="acoes">
+            <a class="botao botao-claro" href="plpdanfe7.html">PLPDANFE7</a>
+            <a class="botao botao-vidro" href="storebt.html">StoreBT</a>
+            <a class="botao botao-vidro" href="dropstore7.html">DropStore7</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="envoltorio">
+      <div class="rodape-grade">
+        <div>
+          <a class="marca" href="index.html"><span class="marca-icone">7</span>AppStore7</a>
+          <p>Ferramentas web feitas no Brasil para quem vende em marketplaces e para quem organiza eventos.</p>
+        </div>
+        <div>
+          <h4>Apps</h4>
+          <ul>
+            <li><a href="plpdanfe7.html">PLPDANFE7</a></li>
+            <li><a href="storebt.html">StoreBT</a></li>
+            <li><a href="dropstore7.html">DropStore7</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>AppStore7</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacidade.html">Política de privacidade</a></li>
+            <li><a href="termos.html">Termos de uso</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <span>© <span data-ano>2026</span> AppStore7. Todos os direitos reservados.</span>
+        <span>Feito no Brasil 🇧🇷</span>
       </div>
     </div>
-  </main>
-  <footer>
-    © AppStore7 · <a href="https://plpdanfe7.appstore7.com.br/privacidade.html">Política de privacidade</a>
   </footer>
+  <script src="assets/site.js?v=4"></script>
 </body>
 </html>
