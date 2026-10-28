@@ -1,0 +1,54 @@
+<!--{"titulo": "Como configurar a impressora Zebra para etiqueta 10x15 de marketplace | AppStore7", "descricao": "Passo a passo para configurar impressora térmica Zebra para etiquetas 10x15 do Mercado Livre e da Shopee: driver, tamanho da mídia, calibração, escuridão, ZPL x PDF e solução de problemas comuns.", "menu": "guias", "prioridade": "0.8"}-->
+  <main class="pagina-texto">
+    <span class="selo">Guias · Expedição</span>
+    <h1>Como configurar a impressora Zebra para etiqueta 10×15</h1>
+    <p class="data">Leitura de 8 minutos · atualizado em outubro de 2026</p>
+
+    <p>A etiqueta 10 × 15 cm, ou 100 × 150 mm, é o tamanho padrão de etiqueta de envio dos marketplaces brasileiros. Uma impressora térmica bem configurada imprime essa etiqueta em um ou dois segundos, com código de barras nítido e sem desperdício. Mal configurada, ela pula etiquetas, corta o código de barras ou imprime clara demais. Este guia passa pelos ajustes que resolvem a maioria dos problemas.</p>
+
+    <h2>1. Térmica direta ou com ribbon?</h2>
+    <p>As impressoras de etiqueta mais usadas por vendedores, como as Zebra de mesa das linhas ZD e GC, trabalham em <strong>térmica direta</strong>: o calor escurece o próprio papel, sem fita. Para etiqueta de envio, que vive poucos dias, é a opção mais prática. A transferência térmica, com ribbon, é usada quando a etiqueta precisa durar muito tempo ou resistir a atrito e umidade. Confira na impressora qual modo está selecionado: imprimir em modo ribbon sem ribbon instalado gera etiqueta em branco.</p>
+
+    <h2>2. Instale o driver certo</h2>
+    <p>No Windows, instale o driver oficial da Zebra, o ZDesigner, que vem no utilitário Zebra Setup Utilities ou na página de suporte do seu modelo. Evite o driver genérico que o Windows instala sozinho: ele costuma errar o tamanho da página e a resolução.</p>
+
+    <h2>3. Configure o tamanho da etiqueta</h2>
+    <p>Nas preferências de impressão do driver, crie ou escolha o tamanho <strong>100 × 150 mm</strong>, com orientação retrato. Verifique também:</p>
+    <ul>
+      <li><strong>Tipo de mídia:</strong> etiqueta com espaço entre elas (gap). A maioria dos rolos de envio é desse tipo.</li>
+      <li><strong>Resolução:</strong> a mesma da impressora, geralmente 203 dpi (8 pontos por milímetro). Arquivos ZPL de marketplace são gerados para essa resolução.</li>
+      <li><strong>Margens:</strong> zero, para o código de barras não ser cortado.</li>
+    </ul>
+
+    <h2>4. Calibre a impressora</h2>
+    <p>Sempre que trocar o rolo, ou se a impressora começar a pular etiquetas ou a imprimir no meio de duas, faça a calibração. Na maioria das Zebra de mesa, basta segurar o botão de avanço (feed) até a luz piscar e soltar: a impressora avança algumas etiquetas e aprende onde cada uma começa. Também dá para calibrar pelo Zebra Setup Utilities.</p>
+
+    <h2>5. Ajuste a escuridão e a velocidade</h2>
+    <p>Etiqueta clara demais pode gerar código de barras que o leitor da transportadora não consegue ler. Escura demais, as barras "engordam" e se juntam. Comece com escuridão média e aumente aos poucos até as barras ficarem pretas e bem separadas. Se precisar aumentar muito, diminua a velocidade de impressão: térmica mais lenta escurece melhor.</p>
+
+    <h2>6. ZPL ou PDF: qual usar?</h2>
+    <p>Os marketplaces costumam oferecer a etiqueta em dois formatos:</p>
+    <ul>
+      <li><strong>ZPL (arquivo .txt ou .zpl):</strong> é a linguagem nativa das impressoras Zebra. O arquivo vai direto para a impressora, que desenha a etiqueta na resolução certa. Resultado: impressão mais rápida e código de barras mais nítido.</li>
+      <li><strong>PDF:</strong> funciona em qualquer impressora, mas passa pelo driver do Windows, que transforma a página em imagem. É mais lento e, se a escala não estiver em 100%, a etiqueta pode sair reduzida ou cortada.</li>
+    </ul>
+    <p>Se a sua impressora é Zebra, prefira ZPL. Para mandar ZPL direto do navegador, a Zebra oferece o programa gratuito <strong>Zebra Browser Print</strong>, que fica aberto perto do relógio do Windows e recebe as etiquetas enviadas por sites autorizados.</p>
+
+    <h2>7. Imprimindo PDF: cuidado com a escala</h2>
+    <p>Se for imprimir PDF, na janela de impressão escolha o tamanho 100 × 150 mm e a opção <strong>tamanho real</strong> ou <strong>100%</strong>, nunca "ajustar à página". Desmarque cabeçalhos e rodapés do navegador. Faça um teste com uma etiqueta antes de imprimir o lote inteiro.</p>
+
+    <h2>8. Problemas comuns e o que fazer</h2>
+    <ul>
+      <li><strong>Imprime uma etiqueta e pula a seguinte:</strong> calibre de novo e confira se o tipo de mídia está como etiqueta com gap.</li>
+      <li><strong>Etiqueta sai em branco:</strong> o rolo pode estar invertido (a face térmica precisa ficar voltada para a cabeça de impressão) ou o modo está como ribbon.</li>
+      <li><strong>Código de barras cortado:</strong> margens diferentes de zero, tamanho errado no driver ou PDF impresso com "ajustar à página".</li>
+      <li><strong>Impressão muito clara:</strong> aumente a escuridão, reduza a velocidade e limpe a cabeça de impressão com álcool isopropílico.</li>
+      <li><strong>Browser Print não encontra a impressora:</strong> confira se o driver ZDesigner está instalado e se a impressora aparece no Windows.</li>
+    </ul>
+
+    <h2>Economize uma etiqueta por pacote</h2>
+    <p>Muitos vendedores ainda imprimem a etiqueta de envio e o DANFE da nota fiscal em duas etiquetas separadas. O <a href="plpdanfe7.html">PLPDANFE7</a> junta as duas numa única etiqueta 10 × 15, coloca o SKU em destaque e manda o ZPL direto para a Zebra pelo Browser Print. É gratuito e funciona no navegador.</p>
+
+    <p style="margin-top:40px"><a class="botao" href="plpdanfe7.html">Conhecer o PLPDANFE7</a></p>
+    <p class="legenda-print">Leia também: <a href="guia-danfe-simplificado-etiqueta.html">DANFE simplificado na etiqueta: o que é e quando usar</a>.</p>
+  </main>

@@ -7,11 +7,12 @@ import json, pathlib, re, datetime
 RAIZ = pathlib.Path(__file__).parent
 SITE = "https://appstore7.com.br"
 PUB = "ca-pub-2393598762421817"
-VERSAO = "7"  # sobe a cada publicação (cache do css/js)
+VERSAO = "8"  # sobe a cada publicação (cache do css/js)
 
 MENU = [
     ("index.html", "Início", "inicio"),
     ("index.html#apps", "Apps", "apps"),
+    ("guias.html", "Guias", "guias"),
     ("sobre.html", "Sobre", "sobre"),
     ("contato.html", "Contato", "contato"),
 ]
@@ -77,6 +78,7 @@ RODAPE = """  <footer class="rodape">
         <div>
           <h4>AppStore7</h4>
           <ul>
+            <li><a href="guias.html">Guias</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
