@@ -7,7 +7,7 @@ import json, pathlib, re, datetime
 RAIZ = pathlib.Path(__file__).parent
 SITE = "https://appstore7.com.br"
 PUB = "ca-pub-2393598762421817"
-VERSAO = "6"  # sobe a cada publicação (cache do css/js)
+VERSAO = "7"  # sobe a cada publicação (cache do css/js)
 
 MENU = [
     ("index.html", "Início", "inicio"),
@@ -63,11 +63,12 @@ RODAPE = """  <footer class="rodape">
       <div class="rodape-grade">
         <div>
           <a class="marca" href="index.html"><span class="marca-icone">7</span>AppStore7</a>
-          <p>Ferramentas web feitas no Brasil para quem vende em marketplaces e para quem organiza eventos.</p>
+          <p>Ferramentas web feitas no Brasil para quem estuda para o ENEM, vende em marketplaces e organiza eventos.</p>
         </div>
         <div>
           <h4>Apps</h4>
           <ul>
+            <li><a href="capigo.html">CapiGO</a></li>
             <li><a href="plpdanfe7.html">PLPDANFE7</a></li>
             <li><a href="storebt.html">StoreBT</a></li>
             <li><a href="dropstore7.html">DropStore7</a></li>

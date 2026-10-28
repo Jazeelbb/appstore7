@@ -220,3 +220,30 @@ p + p { margin-top: 12px; }
   .seta-demo { transform: rotate(90deg); animation: none; }
   .etiqueta-10x15 { width: 60%; }
 }
+
+/* Telas reais dos apps */
+.janela img { width: 100%; height: auto; display: block; }
+.telas-app { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+@media (max-width: 860px) { .telas-app { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; } }
+.telas-app figure { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.telas-app .celular { width: 260px; }
+.telas-app figcaption { color: var(--cinza-texto); font-size: 15px; max-width: 300px; }
+.telas-app figcaption b { display: block; color: var(--preto); font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+.celular img { height: auto; }
+.print-grande { background: var(--cinza-claro); padding: 48px; display: grid; place-items: center; }
+.print-grande .janela { max-width: 1100px; }
+.prints-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 860px) { .prints-2 { grid-template-columns: 1fr; } .print-grande { padding: 16px; } }
+.legenda-print { color: var(--cinza-texto); font-size: 14px; margin-top: 14px; }
+.app-vitrine.foto { padding: 24px; }
+.app-vitrine.foto .janela { box-shadow: 0 16px 40px rgba(0,0,0,.10); }
+.app-destaque { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 0; background: var(--cinza-claro); }
+.app-destaque .app-vitrine { aspect-ratio: auto; padding: 48px 24px; background: transparent; }
+.app-destaque .app-corpo { padding: 56px 48px; justify-content: center; }
+.app-destaque .app-corpo h3 { font-size: clamp(56px, 7vw, 96px); }
+.app-destaque .vitrine-dupla { display: flex; gap: 16px; align-items: flex-end; }
+.app-destaque .vitrine-dupla .celular { width: 210px; }
+.app-destaque .vitrine-dupla .celular:first-child { transform: translateY(-24px); }
+@media (max-width: 860px) { .app-destaque { grid-template-columns: 1fr; } .app-destaque .app-corpo { padding: 32px 20px; } .app-destaque .vitrine-dupla .celular { width: 150px; } }
+/* prints de celular aparecem inteiros (sem corte) */
+.celular img { aspect-ratio: auto; object-fit: contain; }
