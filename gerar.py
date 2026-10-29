@@ -7,6 +7,7 @@ import json, pathlib, re, datetime
 RAIZ = pathlib.Path(__file__).parent
 SITE = "https://appstore7.com.br"
 PUB = "ca-pub-2393598762421817"
+GA4 = "G-80M1R3WVJ1"  # Google Analytics 4 (G-XXXXXXXXXX); vazio = sem Analytics
 VERSAO = "8"  # sobe a cada publicação (cache do css/js)
 
 MENU = [
@@ -17,6 +18,13 @@ MENU = [
     ("contato.html", "Contato", "contato"),
 ]
 
+def analytics():
+    if not GA4:
+        return ""
+    return f"""  <script async src="https://www.googletagmanager.com/gtag/js?id={GA4}"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){{dataLayer.push(arguments);}} gtag("js", new Date()); gtag("config", "{GA4}");</script>
+"""
+
 def cabeca(m, arquivo):
     url = f"{SITE}/" if arquivo == "index.html" else f"{SITE}/{arquivo}"
     return f"""<!DOCTYPE html>
@@ -26,7 +34,7 @@ def cabeca(m, arquivo):
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google-adsense-account" content="{PUB}" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={PUB}" crossorigin="anonymous"></script>
-  <title>{m['titulo']}</title>
+{analytics()}  <title>{m['titulo']}</title>
   <link rel="canonical" href="{url}" />
   <meta name="description" content="{m['descricao']}" />
   <meta property="og:title" content="{m['titulo']}" />
