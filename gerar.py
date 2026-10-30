@@ -11,8 +11,8 @@ GA4 = "G-80M1R3WVJ1"  # Google Analytics 4 (G-XXXXXXXXXX); vazio = sem Analytics
 VERSAO = "8"  # sobe a cada publicação (cache do css/js)
 
 MENU = [
-    ("index.html", "Início", "inicio"),
-    ("index.html#apps", "Apps", "apps"),
+    ("/", "Início", "inicio"),
+    ("/#apps", "Apps", "apps"),
     ("guias.html", "Guias", "guias"),
     ("sobre.html", "Sobre", "sobre"),
     ("contato.html", "Contato", "contato"),
@@ -58,7 +58,7 @@ def topo(ativo):
     )
     return f"""  <header class="topo">
     <div class="envoltorio">
-      <a class="marca" href="index.html"><span class="marca-icone">7</span>AppStore7</a>
+      <a class="marca" href="/"><span class="marca-icone">7</span>AppStore7</a>
       <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
       <ul class="menu">
 {itens}
@@ -71,7 +71,7 @@ RODAPE = """  <footer class="rodape">
     <div class="envoltorio">
       <div class="rodape-grade">
         <div>
-          <a class="marca" href="index.html"><span class="marca-icone">7</span>AppStore7</a>
+          <a class="marca" href="/"><span class="marca-icone">7</span>AppStore7</a>
           <p>Ferramentas web feitas no Brasil para quem estuda para o ENEM, vende em marketplaces e organiza eventos.</p>
         </div>
         <div>
